@@ -1,5 +1,5 @@
 Program distancia_de_dois_pontos ;
-	var x, y, x1, y1, dist:real;
+	var x, y, x1, y1, dist, dist1:real;
 Begin
 	writeln('me informe os pontos x e y das cordenadas');
 	readln(x,y);
@@ -13,7 +13,8 @@ Begin
 	else
 	if (x <> x1)  then
 	begin                                   
-	dist:=(((x-x1) * (x-x1)) + ((y-y1)* (y-y1)));  //faltou radiciação
+	dist:=(((x-x1) * (x-x1)) + ((y-y1)* (y-y1)));
+	dist1:=sqrt(dist);  //faltou radiciação
 	write('A distancia entre os dois pontos é' , dist:6:2);
 	end 
 	else  ;
